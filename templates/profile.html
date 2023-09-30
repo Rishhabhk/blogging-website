@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen and Pixel</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/blogs.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo cc"><a href="/templates/index.html"> <img src="/images/main_logo-removebg-preview.png" alt="" width="200px"></a></div>
+        <div class="home cc ni"><a href="/templates/index.html">Home</a></div>
+        <div class="vab cc ni"><a href="/templates/blogs.html">View blogs</a></div>
+        <div class="pro cc ni"><a href="/templates/profile.html">My Profile</a></div>
+        <div class="login cc ni" onclick="show()">Login</div>
+        <div class="su cc ni"><a href="/templates/registration.html">Sign up</a></div>
+    </div>
+    <div class="create_blog_con">
+        <div class="cb_row1">
+            <div class="title_genre">
+                <label for="title">Title</label><br>
+                <input type="text" name="title" id="title"><br>
+                <label for="genre">Genre</label><br>
+                <input type="text" name="genre" id="genre"><br>
+            </div>
+            <div class="bd">
+                <label for="blog_desc">Blog</label><br>
+                <textarea name="blog_desc" id="blog_desc" cols="30" rows="10"></textarea><br>
+            </div>
+        </div><br>
+        <div class="cb_row2">
+            <label for="blog_img" id="img_label">Upload Image</label>
+            <input type="file" id="blog_img">
+            <button onclick="create_blog()" id="post_btn">Post Blog</button>
+        </div>
+    </div>
+    <div class="profile_con">
+        <div class="profile_heads">
+            <div class="my_blog_head" onclick="show_mb()">My blogs</div>
+            <div class="saved_blog_head" onclick="show_sb()">Saved blogs</div>
+        </div>
+        <div class="my_blog_con">
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic1.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Rishabh Kushwaha</div>
+                            <div class="user_mail">rishabhkushwaha@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img id="img1" src="/images/blog_pics/blog_pic2.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">Cities can play a role in food safety</div>
+                        <div class="desc">As we mark World Food Safety Day, it is important to consider that consumers in many developing countries are not so lucky. For many low- and middle-income countries, food safety standards are primarily for exports to stack the shelves of wealthier nations' supermarkets. But beyond that, domestic food safety has received relatively little policy attention and action is normally reactive — to major foodborne disease outbreaks or trade interruptions — rather than preventative. In practice, this means that there are few measures in place to ensure that domestically traded food remains uncontaminated throughout production, transportation, storage, and processing. Regulations, where they exist, are often not unenforced due to limited resources and capacity. Moreover, many consumers buy from informal markets and unregulated vendors: wet markets, roadside kiosks, and street food sellers. But such retailers do not maintain food safety, are seldom subjected to enforced standards, and typically lack training in food hygiene practices. Within households, ensuring hygiene during food preparation is challenging when safe and clean water is not always easily accessible.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic1.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Rishabh Kushwaha</div>
+                            <div class="user_mail">rishabhkushwaha@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img src="/images/blog_pics/blog_pic3.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">Sustainable financing for health: Forging a new path</div>
+                        <div class="desc">On the eve of the Summit for a New Global Financing Pact convened later this month by the government of France, many of the world’s poorest countries face a host of competing policy priorities while struggling to raise the funds to address them. In the wake of the COVID-19 crisis, developing countries need to regain losses in health and learning, arrest increases in hunger and poverty, and counter climate change.  Yet, most developing economies have not returned to their pre-pandemic growth path, and in many of them, government spending is expected to stagnate or contract for years to come.  As both public debt and interest rates have increased, interest payments divert increasingly large shares of government funding from critical investment priorities. 
+                            The summit will explore options to increase financial solidarity with the global south, supporting countries to increase their fiscal space, help resolve debt challenges, and aim to move rapidly to address national development goals.  One of the summit’s focus areas is health, for three decades recognized as a mainstay of long-term growth, in many places, however, insufficiently funded to make any meaningful progress toward the health-related sustainable development goals. To turn the tide, we must forge a new path with three critical changes in the way we finance health. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic1.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Rishabh Kushwaha</div>
+                            <div class="user_mail">rishabhkushwaha@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img src="/images/blog_pics/blog_pic4.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">Hiroshima: Lessons learned from post-war urban development</div>
+                        <div class="desc">Hiroshima, a name synonymous with unimaginable destruction and human suffering, has become a symbol of hope and rebirth. Today, the city stands as an inspiring testament to resilience, adaptation, and the power of community-driven reconstruction. With its commitment to sustainable urban solutions and civic engagement, Hiroshima has transformed from a war-torn ruin into a vibrant regional economic hub in western Japan, home to 1.2 million people.The World Bank's Tokyo Development Learning Center (TDLC) recognized Hiroshima's extraordinary journey by hosting a symposium to promote learning and dialogue, "Housing and Urban Recovery: Knowledge Exchange in Japan on Urban Crises." The event brought together delegates from Eastern Europe, Central Asia, and representatives from the World Bank to discuss urban recovery strategies and share their experiences.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="saved_blog_con">
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic4.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Pankaj Parihar</div>
+                            <div class="user_mail">pankaj352@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img src="/images/blog_pics/blog_pic4.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">Hiroshima: Lessons learned from post-war urban development</div>
+                        <div class="desc">Hiroshima, a name synonymous with unimaginable destruction and human suffering, has become a symbol of hope and rebirth. Today, the city stands as an inspiring testament to resilience, adaptation, and the power of community-driven reconstruction. With its commitment to sustainable urban solutions and civic engagement, Hiroshima has transformed from a war-torn ruin into a vibrant regional economic hub in western Japan, home to 1.2 million people.The World Bank's Tokyo Development Learning Center (TDLC) recognized Hiroshima's extraordinary journey by hosting a symposium to promote learning and dialogue, "Housing and Urban Recovery: Knowledge Exchange in Japan on Urban Crises." The event brought together delegates from Eastern Europe, Central Asia, and representatives from the World Bank to discuss urban recovery strategies and share their experiences.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic3.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Sooraj Upadhyay</div>
+                            <div class="user_mail">suryadev@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img src="/images/blog_pics/blog_pic3.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">Sustainable financing for health: Forging a new path</div>
+                        <div class="desc">On the eve of the Summit for a New Global Financing Pact convened later this month by the government of France, many of the world’s poorest countries face a host of competing policy priorities while struggling to raise the funds to address them. In the wake of the COVID-19 crisis, developing countries need to regain losses in health and learning, arrest increases in hunger and poverty, and counter climate change.  Yet, most developing economies have not returned to their pre-pandemic growth path, and in many of them, government spending is expected to stagnate or contract for years to come.  As both public debt and interest rates have increased, interest payments divert increasingly large shares of government funding from critical investment priorities. 
+                            The summit will explore options to increase financial solidarity with the global south, supporting countries to increase their fiscal space, help resolve debt challenges, and aim to move rapidly to address national development goals.  One of the summit’s focus areas is health, for three decades recognized as a mainstay of long-term growth, in many places, however, insufficiently funded to make any meaningful progress toward the health-related sustainable development goals. To turn the tide, we must forge a new path with three critical changes in the way we finance health. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic2.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Rahul</div>
+                            <div class="user_mail">rahul12332@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img src="/images/blog_pics/blog_pic2.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">Cities can play a role in food safety</div>
+                        <div class="desc">As we mark World Food Safety Day, it is important to consider that consumers in many developing countries are not so lucky. For many low- and middle-income countries, food safety standards are primarily for exports to stack the shelves of wealthier nations' supermarkets. But beyond that, domestic food safety has received relatively little policy attention and action is normally reactive — to major foodborne disease outbreaks or trade interruptions — rather than preventative. In practice, this means that there are few measures in place to ensure that domestically traded food remains uncontaminated throughout production, transportation, storage, and processing. Regulations, where they exist, are often not unenforced due to limited resources and capacity. Moreover, many consumers buy from informal markets and unregulated vendors: wet markets, roadside kiosks, and street food sellers. But such retailers do not maintain food safety, are seldom subjected to enforced standards, and typically lack training in food hygiene practices. Within households, ensuring hygiene during food preparation is challenging when safe and clean water is not always easily accessible.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blog_row1">
+                    <div class="user_info">
+                        <div class="user_img"><img src="/images/profile_pics/propic5.png" alt="" width="50vw" height="50vh"></div>
+                        <div class="username_mail">
+                            <div class="uname">Dev Sharma</div>
+                            <div class="user_mail">DSdev43@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="save"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <hr style="opacity: 0.4; margin-bottom:20px">
+                <div class="blog_info">
+                    <div class="blog_img">
+                        <div class="image"><img src="/images/blog_pics/blog_pic5.png" alt="" width="300px" height="200px"></div>
+                    </div>
+                    <div class="title_desc">
+                        <div class="title">5 things we can do for a healthy ocean in South Asia</div>
+                        <div class="desc">South Asia is home to some of the largest natural coastal habitats such as mangroves, coral reefs and seagrass. The world’s largest contiguous mangrove forest - the Sundarbans - located between Bangladesh and India, is home to unique flora and fauna including tigers and rhinos and sustains more than 4 million people who directly depend on them. The coral reef systems that make up the more than 1,000 islands of the Maldives are the seventh largest coral reef area in the world. Protecting such natural coastal habitats is imperative for the environment and the region’s biodiversity. Sound natural resources management practices, such as protecting, restoring and replanting native species and coral reef rehabilitation can protect these resources and at the same time boost people’s livelihoods and economic opportunities.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col1">
+            <div class="flogo"><img src="/images/copy.png" alt="" width="270px"></div>
+        </div>
+        <div class="col2">
+            <div class="abouthead ftitle">About</div>
+            <div class="aboutcon fcon">
+                <p>Company</p>
+                <p>Team</p>
+                <p>Technologies</p>
+            </div>
+        </div>
+        <div class="col3">
+            <div class="joinhead ftitle">Join us</div>
+            <div class="joincon fcon">
+                <p>Front-End</p>
+                <p>Back-End</p>
+                <p>Designing</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/695f03e4fd.js" crossorigin="anonymous"></script>
+<script src="/js/profile.js"></script>
+</html>

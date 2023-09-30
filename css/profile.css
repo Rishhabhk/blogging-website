@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background: linear-gradient(to right,#0e1942,black,black,#0e1942);
+}
+.create_blog_con{
+    font-weight: 100;
+    margin-inline: 3vw;
+    box-shadow: 0 0 10px 3px black;
+    margin-top:88px;
+    background-color: #3841a727;
+    padding: 2vh 2vw;
+    padding-bottom: 4vh;
+    border-radius: 10px;
+}
+.cb_row1{
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: 3fr 7fr;
+}
+.create_blog_con label{
+    padding-left: 10px;
+    font-size: 1.3vw;
+}
+#title, #genre ,#blog_desc{
+    margin-block: 10px;
+    font-size: 1.3vw;
+    width:97%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px 2px black;
+    background-color: #c4cfff;
+    height: 4vh;
+    border-radius: 10px;
+    padding: 10px;
+}
+#blog_desc{
+    height: 16vh;
+}
+.cb_row2{
+    display: flex;
+    justify-content: space-between;
+}
+#img_label{
+    box-shadow: 0 0 10px 0px black;
+    background-color: #20327aa9;
+    border-radius: 10px;
+    padding: 2vh 5vw;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+#img_label:hover{
+    background-color: rgb(45, 58, 118);
+}
+#blog_img{
+    display: none;
+}
+#post_btn{
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px black;
+    margin-left: 20px; 
+    background-color: #101f54;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    padding: 2vh 7vw;
+    transition: ease-in-out 0.2s;
+}
+#post_btn:hover{
+    background-color: rgb(45, 58, 118);
+}
+.profile_con{
+    margin-top: 20px;
+}
+.profile_heads{
+    font-weight: 100;
+    font-size: 1.5vw;
+    display: flex;
+    margin-inline: 3vw;
+    gap: 20px;
+    height: 7vh;
+    justify-content: space-around;
+}
+.my_blog_head, .saved_blog_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    /* padding: 2vh 4vw; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px black;
+    background-color: #869dfb37;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.my_blog_con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px; 
+    margin-inline: 3vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.saved_blog_con{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px; 
+    margin-inline: 3vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.saved_blog_con i{
+    color: #6080ff;
+}

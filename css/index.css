@@ -1,0 +1,315 @@
+ @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.dark{
+    display: none;
+    position: fixed;
+    background-color: #000000d3;
+    height: 100vh;
+    z-index: 3;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav{
+    display: grid;
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-weight: 100;
+    font-size: 1vw;
+    height: 80px;
+    grid-template-columns: repeat(12,1fr);
+    background:transparent;
+    z-index: 4;
+    backdrop-filter: blur(8px);
+}
+.cc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    grid-column: 2/4;
+}
+.logo img{
+    filter: drop-shadow(0 0 2px black);
+}
+.home{
+    grid-column: 7/8;
+}
+.vab{
+    grid-column: 8/9;
+}
+.pro{
+    grid-column: 9/10;
+}
+.login{
+    grid-column: 10/11;
+}
+.su{
+    grid-column: 11/12;
+    background-color: #6080ff37;
+    margin: 20px 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+.su:hover{
+    background-color: #6080ff52;
+}
+.ni{
+    text-shadow: 0 0 3px  black;
+    color: white;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.ni:hover{
+    border-bottom: #829bff 1px solid;
+}
+.ni a{
+    transition: color 0.5s ease-in-out;
+}
+
+.login_con{
+    position: fixed;
+    top:50%;
+    width: 30vw;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to right,#0e1942,black,black,black,#0e1942);
+    color: white;
+    z-index: 3;
+    font-weight: 100;
+    border-radius: 30px;
+    box-shadow: 0 0  20px 4px #000000;  
+    padding: 40px 70px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.login_con center{
+    font-size: 1.2vw;
+    margin-bottom: 5px;
+}
+#pw,#uname{
+    width: 100%;
+} 
+.login_con input[type=text],.login_con input[type=password] {
+    border-radius: 30px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: black;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.login_con input[type=text]:focus,.login_con input[type=password]:focus {
+    /* background-color: #d4effe; */
+    outline: none;
+}
+.login_con button[type=submit] {
+  border-radius: 30px;
+  background-color: #6080ff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.login_con button[type=submit]:hover {
+    background-color:#829bff;
+    box-shadow:0 0 10px -1px #6080ff; 
+}
+.login_con .cancel_btn {
+    background-color: #6080ff72;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 6px 20px;
+}
+.login_con .cancel_btn:hover {
+    background-color: #6080ff93;
+}
+.login_con input[type=checkbox]{
+    margin-right: 5px;
+    accent-color: #6080ff;
+}
+.log_cross_btn{
+    border: none;
+    right: 1.4vw;
+    top: 2vh;
+    font-size: 1.5vw;
+    cursor: pointer;
+    background: none;
+    position: absolute;
+}
+.log_cross_btn i:hover{
+    color: #6080ff;
+}
+
+.reg_info{
+    padding: 30px 40px;
+}
+.reg_container label{
+    padding-left: 1vw;
+}
+.reg_form{
+    width: 45vw;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 100;
+    position: absolute;
+    z-index: 4;
+    box-shadow: 0 0  20px 4px #000000;  
+    padding-top: 50px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#0e1942,black,black,black,#0e1942);
+    animation: fadeIn 0.3s ease-in-out;
+}
+.reg_form input[type=text],.reg_form input[type=password] {
+    border-radius: 30px;
+    width: 96%;
+    padding: 13px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: none;
+}
+.reg_form input[type=text]:focus,.reg_form input[type=password]:focus {
+    outline: none;
+}
+.registerbtn {
+    border-radius: 30px;
+    background-color: #6080ff;
+    border: none;
+    cursor: pointer;
+    width: 15vw;
+    opacity: 0.9;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+    font-size: 1.1vw;
+}
+.registerbtn:hover {
+    background-color:#829bff;
+    box-shadow:0 0 10px -1px #6080ff;
+}
+.add_pro_pic{
+    background-color: #2e407f;
+    width: 10vw;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    height: 5vh;
+}
+.add_pro_pic:hover{
+    background-color: #1d2850;
+}
+.reg_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.reg_cross_btn{
+    background: none;
+    position: absolute;
+    right: 2vw;
+    font-size: 2vw;
+    top: 3vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.reg_cross_btn i:hover{
+    color: #6080ff;
+}
+.carousel{
+    position: relative;
+    background-image: url(/images/bg2.jpg);
+    background-size:100vw 100vh;
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 340;
+    animation-name: first;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+.cancel_forgot{
+    display: flex;
+    justify-content: space-between;
+}
+.create1 a{
+    font-size: 1.2vw;
+    margin-top: 40px;
+    text-decoration: none;
+    color:#0b0c10;
+    background-color:#839cff;
+    padding: 20px 40px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.create1 a:hover{
+    background-color:#bac7f9;
+    box-shadow: 0 0 20px -6px #6080ff;
+}
+
+.footer{
+    background-color: white;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    height:20vh;
+    display: flex;
+    justify-content:space-evenly
+}
+.flogo{
+    margin-bottom: 3vh;
+}
+.flogo img{
+    position: absolute;
+    left:8.5vw;
+}
+.links{
+    margin-inline: 0.5vw;
+    
+}
+.links:hover{
+    opacity: 1;
+}
+.ftitle{
+    font-size: 1.7vw;
+    color: black;
+    margin-bottom: 2vh;
+}
+.fcon p{
+    color: black;
+    cursor: pointer;
+    opacity: 0.7;
+    padding-block: 0.5vw;
+}
+.fcon p:hover{
+    opacity: 1;
+}
+@keyframes first{
+    from{background-position: 0 0;}
+    to{background-position: 100vw 0;}
+}
+@keyframes slow{
+    from{opacity: 0;}
+    to{opacity: 1;}
+   } 

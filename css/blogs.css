@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background: linear-gradient(to right,#0e1942,black,black,black,#0e1942);
+}
+input{
+    color: black;
+}
+textarea{
+    color: black;
+}
+
+.blog_con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-inline: 3vw;
+    margin-bottom: 30px;
+    margin-top: 88px;
+}
+
+.blogs{
+    font-weight: 100;
+    box-shadow: 0 0 30px -2px black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.09);
+    /* background-color: aquamarine; */
+    padding: 20px 20px;
+}
+
+.blog_row1{
+    display: flex;
+    justify-content: space-between;
+}
+.save i{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.8vw;
+    margin-right: 17px;
+}
+.save i:hover{
+    color: #6080ff;
+}
+.blog_info{
+    display: flex;
+}
+.user_info{
+    display: flex;
+    cursor: pointer;
+}
+.user_info:hover{
+    opacity: 0.8;
+}
+.user_img img{
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.uname{
+    padding-left: 10px;
+    font-size: 1.2vw;
+    margin-bottom: 5px;
+}
+.user_mail{
+    padding-left: 10px;
+    font-size: 1vw;
+    margin-bottom: 20px;
+}
+.image img{
+    box-shadow: 0 0 10px -2px black;
+    border-radius: 10px;
+}
+.title_desc{
+    padding-left: 20px;
+}
+.title{
+    /* width: 20vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.desc{
+    font-size: 1vw;
+    height: 19vh; 
+    overflow: auto;
+    padding-right: 20px;
+}
+
+.desc::-webkit-scrollbar {
+    width: 5px; 
+}
+::-webkit-scrollbar-track {
+    background:  rgb(97, 97, 97); 
+    border-radius: 10px;
+  }
+.desc::-webkit-scrollbar-thumb {
+    background: #6080ff;
+    border-radius: 10px;
+}

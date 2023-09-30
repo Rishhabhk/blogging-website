@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen and Pixel</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo cc"><a href="/templates/index.html"> <img src="/images/main_logo-removebg-preview.png" alt="" width="200px"></a></div>
+        <div class="home cc ni"><a href="/templates/index.html">Home</a></div>
+        <div class="vab cc ni"><a href="/templates/blogs.html">View blogs</a></div>
+        <div class="pro cc ni"><a href="/templates/profile.html">My Profile</a></div>
+        <div class="login cc ni" onclick="show()">Login</div>
+        <div class="su cc ni" onclick="show_reg()">Sign up</div>
+    </div>
+    <div class="dark"></div>
+    <form class="login_con">
+        <button class="log_cross_btn" type="button" onclick="hide()"><i class="fa-solid fa-xmark"></i></button>
+        <center><label for="uname">Username :</label></center>
+        <input type="text" id="uname" name="uname"><br><br>
+        <center><label for="pw">Password :</label></center>
+        <input type="password" id="pw" name="pw" required><br><br>
+        <button type="submit" value="Submit">Login</button><br><br>
+        <input type="checkbox" checked="checked" name="remember" required> 
+        <label for="remember">Remember me</label><br><br>
+        <div class="cancel_forgot">
+            <div class="cancel_btn" onclick="hide()">Cancel</div>
+            <div class="forgot_pw"><a href="#">Forgot password ?</a></div>
+        </div>
+    </form>
+    <div class="reg_container">  
+        <form class="reg_form">
+            <button class="reg_cross_btn" type="button" onclick="hide_reg()"><i class="fa-solid fa-xmark"></i></button>
+          <center>
+            <h1>Register</h1>
+            <br>
+            <p>Please fill in this form to create an account.</p>
+          </center>
+          <div class="reg_info">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <label for="reg_uname">Username</label>
+            <input type="text" name="reg_uname" id="reg_uname" placeholder="Username">
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          
+            <label for="psw-repeat">Repeat Password</label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <div class="reg_btns">
+                <button type="button" class="add_pro_pic">Add Profile picture</button>
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="carousel cc">
+        <div class="ccon">
+           <div class="tag1 cc" style="font-size: 60px;">Publish your passions, your way</div>
+           <div class="tag2 cc" style="font-size: 35px; margin-top:10px">Create a unique and beautiful blog easily</div>
+           <div class="create1 cc"><a href="/templates/profile.html">Get Started</a></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col1">
+            <div class="flogo"><img src="/images/copy.png" alt="" width="270px"></div>
+        </div>
+        <div class="col2">
+            <div class="abouthead ftitle">About</div>
+            <div class="aboutcon fcon">
+                <p>Company</p>
+                <p>Team</p>
+                <p>Technologies</p>
+            </div>
+        </div>
+        <div class="col3">
+            <div class="joinhead ftitle">Join us</div>
+            <div class="joincon fcon">
+                <p>Front-End</p>
+                <p>Back-End</p>
+                <p>Designing</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/js/create_blog.js"></script>
+<script src="/js/index.js"></script>
+<script src="https://kit.fontawesome.com/695f03e4fd.js" crossorigin="anonymous"></script>
+</html>
